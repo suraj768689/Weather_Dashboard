@@ -1,0 +1,120 @@
+/* Main Container */
+.weather-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Current Weather Card */
+  .current-weather-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 350px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .current-weather-card h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  .weather-details {
+    margin-top: 10px;
+  }
+  
+  .temp {
+    font-size: 36px;
+    font-weight: 600;
+    color: #ff6600;
+  }
+  
+  .condition {
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .time, .day-night {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .day-night span {
+    margin: 0 10px;
+  }
+  
+  /* Forecast Container */
+  .forecast-container {
+    width: 100%;
+    max-width: 800px;
+    padding: 10px;
+  }
+  
+  .forecast-container h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Forecast Cards */
+  .forecast-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .forecast-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .forecast-card h4 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  .forecast-details {
+    padding-top: 10px;
+  }
+  
+  .forecast-item {
+    margin-bottom: 10px;
+  }
+  
+  .forecast-time {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .forecast-temp {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ff6600;
+  }
+  
+  .message {
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .forecast-cards {
+      grid-template-columns: 1fr;
+    }
+  }
+  

@@ -1,0 +1,28 @@
+{
+  "favorites": [
+    {
+      "name": "Kolkata",
+      "id": 3
+    },
+    {
+      "name": "delhi",
+      "id": 4
+    },
+    {
+      "name": "bangalore",
+      "id": 5
+    },
+    {
+      "name": "Mumbai",
+      "id": 7
+    },
+    {
+      "name": "Chennai",
+      "id": 9
+    },
+    {
+      "name": "Kolkata",
+      "id": 10
+    }
+  ]
+}
