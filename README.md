@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# Weather Dashboard
+A weather dashboard built with React, which fetches real-time weather data and a 5-day forecast using the OpenWeatherMap API. Users can search for a city, view the current weather, and see the forecast for the next 5 days. The app also includes functionality to save and manage favorite cities.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Features
+* Search for a city and view current weather and 5-day forecast.
+* Add cities to a list of favorites.
+* Remove cities from the list of favorites.
+* Display weather data for favorite cities.
+* Stores last searched city using local storage.
 
-## Available Scripts
+# Components
+* Search: Allows users to search for cities.
+* Weather Display: Displays current weather data and 5-day forecast.
+* Favorite: Manages favorite cities and displays weather for those cities.
 
-In the project directory, you can run:
+# Prerequisites
+Before running the application, you need:
+* A React development environment (Node.js, npm/yarn installed).
+* API Key from OpenWeatherMap.
 
-### `npm start`
+# Steps to Set Up
+1. Clone the repository
+git clone https://github.com/your-username/weather-dashboard.git
+cd weather-dashboard
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. Install dependencies
+Run the following command to install all the necessary dependencies:
+npm install
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. Obtain an OpenWeatherMap API Key
+To use the OpenWeatherMap API, you need to get an API key:
+* Go to OpenWeatherMap and create an account.
+* After logging in, navigate to API keys and create a new key.
+* Copy the API key to use in your application.
 
-### `npm test`
+4. Set up your API Key
+* Create a .env file in the root of your project.
+* Add the following line to the .env file:
+REACT_APP_OPENWEATHER_API_KEY=your-api-key-here
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Replace your-api-key-here with the API key you obtained from OpenWeatherMap.
 
-### `npm run build`
+5. Start the Application
+After setting up the environment, start the development server:
+npm start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This will launch the app in your default browser, usually at http://localhost:3000.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+6. Running JSON Server (Optional)
+If you want to run a JSON server to manage favorite cities:
+* Install JSON server globally:
+  npm install -g json-server
+  
+* Create a db.json file in the root directory with the following structure:
+{
+  "favorites": []
+}
+* Start the JSON server:
+json-server --watch db.json --port 5000
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* The server will run on http://localhost:5000 by default.
